@@ -3,9 +3,11 @@
     <!-- Sidebar navigation with fixed header and scrollable content -->
     <nav class="w-64 bg-gray-50 border-r flex flex-col">
       <!-- Fixed Header -->
-      <div class="p-4 border-b">
-        <h1 class="text-xl font-bold text-gray-800">My App</h1>
-      </div>
+      <RouterLink to="/">
+        <div class="p-4 border-b">
+          <h1 class="text-xl font-bold text-gray-800">Spark UI examples</h1>
+        </div>
+      </RouterLink>
 
       <!-- Scrollable Navigation -->
       <div class="flex-1 overflow-y-auto p-4">
@@ -42,7 +44,6 @@ export default {
   data() {
     return {
       routes: [
-        { path: '/', name: 'Home' },
         { path: '/animatedBeam', name: 'animatedBeam' },
         { path: '/animatedGradientText', name: 'animatedGradientText' },
         { path: '/animatedList', name: 'animatedList' },
