@@ -8,6 +8,7 @@ import avatarCircle from '@/components/avatarCircle/Demo.vue'
 import bento from '@/components/bento/Demo.vue'
 import blurFade from '@/components/blurFade/Demo.vue'
 import blurIn from '@/components/blurIn/Demo.vue'
+import dotPattern from '@/components/dotPattern/Demo.vue'
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: '/blurIn',
     name: 'blurIn',
     component: blurIn,
+  },
+  {
+    path: '/dotPattern',
+    name: 'dotPattern',
+    component: dotPattern,
   },
 ]
 

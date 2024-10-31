@@ -37,6 +37,7 @@ export default {
         { path: '/bento', name: 'bento' },
         { path: '/blurFade', name: 'blurFade' },
         { path: '/blurIn', name: 'blurIn' },
+        { path: '/dotPattern', name: 'dotPattern' },
       ],
     }
   },
