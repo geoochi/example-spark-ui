@@ -29,9 +29,11 @@ export default {
     return {
       routes: [
         { path: '/', name: 'Home' },
-        { path: '/AnimatedBeamDemo', name: 'AnimatedBeamDemo' },
-        { path: '/AnimatedGradientTextDemo', name: 'AnimatedGradientTextDemo' },
-        { path: '/AnimatedListDemo', name: 'AnimatedListDemo' },
+        { path: '/AnimatedBeam', name: 'AnimatedBeam' },
+        { path: '/AnimatedGradientText', name: 'AnimatedGradientText' },
+        { path: '/AnimatedList', name: 'AnimatedList' },
+        { path: '/AnimatedShinyText', name: 'AnimatedShinyText' },
+        { path: '/AvatarCircle', name: 'AvatarCircle' },
       ],
     }
   },
