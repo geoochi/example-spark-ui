@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LetterUp from "./letter-up.vue";
+import LetterUp from './letter-up.vue'
 </script>
 
 <template>

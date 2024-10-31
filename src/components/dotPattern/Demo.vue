@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
-import DotPattern from "./DotPattern.vue";
+import { cn } from '../../lib/utils'
+import DotPattern from './DotPattern.vue'
 </script>
 
 <template>
@@ -15,7 +15,7 @@ import DotPattern from "./DotPattern.vue";
     <DotPattern
       :class="
         cn(
-          '[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]',
+          '[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]'
         )
       "
     />

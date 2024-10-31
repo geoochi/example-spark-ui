@@ -1,106 +1,104 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, useId, watch } from "vue";
+import { onMounted, onUnmounted, ref, useId, watch } from 'vue'
 
 const props = withDefaults(
   defineProps<{
-    containerRef: any;
-    fromRef: any;
-    toRef: any;
-    class?: string;
-    curvature?: number;
-    reverse?: boolean;
-    pathColor?: string;
-    pathWidth?: number;
-    pathOpacity?: number;
-    gradientStartColor?: string;
-    gradientStopColor?: string;
-    delay?: number;
-    duration?: number;
-    startXOffset?: number;
-    startYOffset?: number;
-    endXOffset?: number;
-    endYOffset?: number;
-    width?: number;
-    height?: number;
+    containerRef: any
+    fromRef: any
+    toRef: any
+    class?: string
+    curvature?: number
+    reverse?: boolean
+    pathColor?: string
+    pathWidth?: number
+    pathOpacity?: number
+    gradientStartColor?: string
+    gradientStopColor?: string
+    delay?: number
+    duration?: number
+    startXOffset?: number
+    startYOffset?: number
+    endXOffset?: number
+    endYOffset?: number
+    width?: number
+    height?: number
   }>(),
   {
     curvature: 0,
     reverse: false,
     duration: Math.random() * 3 + 4,
     delay: 3,
-    pathColor: "gray",
+    pathColor: 'gray',
     pathWidth: 2,
     pathOpacity: 0.2,
-    gradientStartColor: "#ffaa40",
-    gradientStopColor: "#9c40ff",
+    gradientStartColor: '#ffaa40',
+    gradientStopColor: '#9c40ff',
     startXOffset: 0,
     startYOffset: 0,
     endXOffset: 0,
     endYOffset: 0,
-  },
-);
+  }
+)
 
-const id = `pattern-${useId()}`;
+const id = `pattern-${useId()}`
 
 const initial = {
-  x1: "10%",
-  x2: "0%",
-  y1: "0%",
-  y2: "0%",
-};
-const svgDimensions = ref({ width: 0, height: 0 });
-const pathD = ref("");
+  x1: '10%',
+  x2: '0%',
+  y1: '0%',
+  y2: '0%',
+}
+const svgDimensions = ref({ width: 0, height: 0 })
+const pathD = ref('')
 function updatePath() {
   if (
     props.containerRef &&
     props.fromRef?.circleRef &&
     props.toRef?.circleRef
   ) {
-    const containerRect = props.containerRef?.getBoundingClientRect();
-    const rectA = props.fromRef?.circleRef?.getBoundingClientRect();
-    const rectB = props.toRef?.circleRef?.getBoundingClientRect();
+    const containerRect = props.containerRef?.getBoundingClientRect()
+    const rectA = props.fromRef?.circleRef?.getBoundingClientRect()
+    const rectB = props.toRef?.circleRef?.getBoundingClientRect()
 
-    const svgWidth = containerRect?.width;
-    const svgHeight = containerRect?.height;
-    svgDimensions.value.width = svgWidth;
-    svgDimensions.value.height = svgHeight;
+    const svgWidth = containerRect?.width
+    const svgHeight = containerRect?.height
+    svgDimensions.value.width = svgWidth
+    svgDimensions.value.height = svgHeight
 
     const startX =
-      rectA.left - containerRect.left + rectA.width / 2 + props.startXOffset;
+      rectA.left - containerRect.left + rectA.width / 2 + props.startXOffset
     const startY =
-      rectA.top - containerRect.top + rectA.height / 2 + props.startYOffset;
+      rectA.top - containerRect.top + rectA.height / 2 + props.startYOffset
     const endX =
-      rectB.left - containerRect.left + rectB.width / 2 + props.endXOffset;
+      rectB.left - containerRect.left + rectB.width / 2 + props.endXOffset
     const endY =
-      rectB.top - containerRect.top + rectB.height / 2 + props.endYOffset;
+      rectB.top - containerRect.top + rectB.height / 2 + props.endYOffset
 
-    const controlY = startY - props.curvature;
-    const d = `M ${startX},${startY} Q ${
-      (startX + endX) / 2
-    },${controlY} ${endX},${endY}`;
-    pathD.value = d;
+    const controlY = startY - props.curvature
+    const d = `M ${startX},${startY} Q ${(startX + endX) / 2},${controlY} ${endX},${endY}`
+    pathD.value = d
   }
 }
 
-const controller = new AbortController();
+const controller = new AbortController()
 
 onMounted(() => {
-  window.addEventListener("resize", updatePath, {
+  window.addEventListener('resize', updatePath, {
     signal: controller.signal,
-  });
-});
+  })
+})
 
 onUnmounted(() => {
-  controller.abort();
-});
+  controller.abort()
+})
 
 watch(
   props,
   (_) => {
-    updatePath();
+    updatePath()
   },
-  { deep: true },
-);
+  { deep: true }
+)
 </script>
 
 <template>

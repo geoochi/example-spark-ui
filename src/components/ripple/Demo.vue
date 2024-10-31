@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Ripple from "./Ripple.vue";
+import Ripple from './Ripple.vue'
 </script>
 
 <template>

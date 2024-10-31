@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed } from 'vue'
 
 const props = withDefaults(
   defineProps<{
-    accelerate?: boolean;
-    color?: string;
+    accelerate?: boolean
+    color?: string
   }>(),
   {
     accelarate: false,
-    color: "#00DC82",
-  },
-);
+    color: '#00DC82',
+  }
+)
 
-const isDark = false;
+const isDark = false
 
 const theme = computed(() => {
-  return isDark ? props.color : "red";
-});
+  return isDark ? props.color : 'red'
+})
 </script>
 
 <template>

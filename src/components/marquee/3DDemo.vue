@@ -1,47 +1,47 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import Marquee from "./Marquee.vue";
+import { computed } from 'vue'
+import Marquee from './Marquee.vue'
 
-const isDark = false;
+const isDark = false
 
 const leftGradient = computed(() => {
   return isDark
-    ? "pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#000000] to-transparent"
-    : "pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white to-transparent";
-});
+    ? 'pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#000000] to-transparent'
+    : 'pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white to-transparent'
+})
 
 const rightGradient = computed(() => {
   return isDark
-    ? "pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#000000] to-transparent"
-    : "pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white to-transparent";
-});
+    ? 'pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#000000] to-transparent'
+    : 'pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white to-transparent'
+})
 
 const logos = [
   {
-    name: "Microsoft",
-    img: "https://picsum.photos/id/1/200/300",
+    name: 'Microsoft',
+    img: 'https://picsum.photos/id/1/200/300',
   },
   {
-    name: "Apple",
-    img: "https://picsum.photos/id/2/200/300",
+    name: 'Apple',
+    img: 'https://picsum.photos/id/2/200/300',
   },
   {
-    name: "Google",
-    img: "https://picsum.photos/id/3/200/300",
+    name: 'Google',
+    img: 'https://picsum.photos/id/3/200/300',
   },
   {
-    name: "Facebook",
-    img: "https://picsum.photos/id/4/200/300",
+    name: 'Facebook',
+    img: 'https://picsum.photos/id/4/200/300',
   },
   {
-    name: "LinkedIn",
-    img: "https://picsum.photos/id/5/200/300",
+    name: 'LinkedIn',
+    img: 'https://picsum.photos/id/5/200/300',
   },
   {
-    name: "Twitter",
-    img: "https://picsum.photos/id/6/200/300",
+    name: 'Twitter',
+    img: 'https://picsum.photos/id/6/200/300',
   },
-];
+]
 </script>
 
 <template>

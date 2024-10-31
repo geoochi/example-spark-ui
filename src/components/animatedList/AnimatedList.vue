@@ -1,39 +1,39 @@
 <script lang="ts" setup>
-import { computed, onMounted, ref, useSlots } from "vue";
-import { cn } from "../../lib/utils";
+import { computed, onMounted, ref, useSlots } from 'vue'
+import { cn } from '../../lib/utils'
 
 const props = defineProps({
   class: {
     type: String,
-    default: "",
+    default: '',
   },
   delay: {
     type: Number,
     default: 1000,
   },
-});
+})
 
-const slots = useSlots();
-const index = ref(0);
-const slotsArray = ref<any>([]);
+const slots = useSlots()
+const index = ref(0)
+const slotsArray = ref<any>([])
 
-onMounted(loadComponents);
+onMounted(loadComponents)
 
 const itemsToShow = computed(() => {
-  return slotsArray.value.slice(0, index.value);
-});
+  return slotsArray.value.slice(0, index.value)
+})
 
 async function loadComponents() {
-  slotsArray.value = slots.default ? slots.default()[0]?.children : [];
+  slotsArray.value = slots.default ? slots.default()[0]?.children : []
 
   while (index.value < slotsArray.value.length) {
-    index.value++;
-    await delay(props.delay);
+    index.value++
+    await delay(props.delay)
   }
 }
 
 async function delay(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
 function getInitial(idx: number) {
@@ -42,7 +42,7 @@ function getInitial(idx: number) {
         scale: 0,
         opacity: 0,
       }
-    : undefined;
+    : undefined
 }
 function getEnter(idx: number) {
   return idx === index.value - 1
@@ -51,12 +51,12 @@ function getEnter(idx: number) {
         opacity: 1,
         y: 0,
         transition: {
-          type: "spring",
+          type: 'spring',
           stiffness: 250,
           damping: 40,
         },
       }
-    : undefined;
+    : undefined
 }
 
 function getLeave() {
@@ -65,11 +65,11 @@ function getLeave() {
     opacity: 0,
     y: 0,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 350,
       damping: 40,
     },
-  };
+  }
 }
 </script>
 
@@ -78,7 +78,7 @@ function getLeave() {
     :class="
       cn(
         'w-[250px] h-[370px] md:w-[600px] overflow-auto rounded-lg',
-        $props.class,
+        $props.class
       )
     "
   >

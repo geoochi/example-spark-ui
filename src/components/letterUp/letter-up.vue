@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
+import { cn } from '../../lib/utils'
 
 interface LetterPullupProps {
-  class?: string;
-  words: string;
-  delay?: number;
+  class?: string
+  words: string
+  delay?: number
 }
 
-const props = defineProps<LetterPullupProps>();
+const props = defineProps<LetterPullupProps>()
 
-const letters = props.words.split("");
+const letters = props.words.split('')
 
 const pullupVariant = {
   initial: { y: 100, opacity: 0 },
@@ -20,12 +20,12 @@ const pullupVariant = {
       delay: i * (props.delay ? props.delay : 0.05),
     },
   }),
-};
+}
 
 const className = cn(
-  "font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm md:text-4xl md:leading-[5rem]",
-  props.class,
-);
+  'font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm md:text-4xl md:leading-[5rem]',
+  props.class
+)
 </script>
 
 <template>

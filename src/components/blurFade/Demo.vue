@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BlurFade from "./BlurFade.vue";
+import BlurFade from './BlurFade.vue'
 </script>
 
 <template>

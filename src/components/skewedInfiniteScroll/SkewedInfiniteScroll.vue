@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed } from 'vue'
 
 const props = defineProps<{
-  items: { id: string; text: string }[];
-}>();
-const isDark = false;
-const currentTheme = computed(() => (isDark ? "#1f2937" : "#f3f4f6"));
+  items: { id: string; text: string }[]
+}>()
+const isDark = false
+const currentTheme = computed(() => (isDark ? '#1f2937' : '#f3f4f6'))
 </script>
 
 <template>

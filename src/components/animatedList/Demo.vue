@@ -1,39 +1,39 @@
 <script setup lang="ts">
-import AnimatedList from "./AnimatedList.vue";
-import Notification from "./Notification.vue";
+import AnimatedList from './AnimatedList.vue'
+import Notification from './Notification.vue'
 
 let notifications = [
   {
-    name: "Payment received",
-    description: "Spark UI",
-    time: "15m ago",
-    icon: "💸",
-    color: "#00C9A7",
+    name: 'Payment received',
+    description: 'Spark UI',
+    time: '15m ago',
+    icon: '💸',
+    color: '#00C9A7',
   },
   {
-    name: "User signed up",
-    description: "Spark UI",
-    time: "10m ago",
-    icon: "👤",
-    color: "#FFB800",
+    name: 'User signed up',
+    description: 'Spark UI',
+    time: '10m ago',
+    icon: '👤',
+    color: '#FFB800',
   },
   {
-    name: "New message",
-    description: "Spark UI",
-    time: "5m ago",
-    icon: "💬",
-    color: "#FF3D71",
+    name: 'New message',
+    description: 'Spark UI',
+    time: '5m ago',
+    icon: '💬',
+    color: '#FF3D71',
   },
   {
-    name: "New event",
-    description: "Spark UI",
-    time: "2m ago",
-    icon: "🗞️",
-    color: "#1E86FF",
+    name: 'New event',
+    description: 'Spark UI',
+    time: '2m ago',
+    icon: '🗞️',
+    color: '#1E86FF',
   },
-];
+]
 
-notifications = Array.from({ length: 30 }, () => notifications).flat();
+notifications = Array.from({ length: 30 }, () => notifications).flat()
 </script>
 
 <template>

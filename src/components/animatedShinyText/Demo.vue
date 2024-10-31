@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-import { cn } from "../../lib/utils";
-import AnimatedShinyText from "./AnimatedShinyText.vue";
+import { Icon } from '@iconify/vue'
+import { cn } from '../../lib/utils'
+import AnimatedShinyText from './AnimatedShinyText.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import AnimatedShinyText from "./AnimatedShinyText.vue";
       <div
         :class="
           cn(
-            'group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800',
+            'group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800'
           )
         "
       >

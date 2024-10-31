@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Nitro from "../../components/icons/Nitro.vue";
-import Nuxt from "../../components/icons/Nuxt.vue";
-import ViteIcon from "../../components/icons/ViteIcon.vue";
-import Vitest from "../../components/icons/Vitest.vue";
-import Vue from "../../components/icons/Vue.vue";
-import OrbitingCircles from "./OrbitingCircles.vue";
+import Nitro from '../../components/icons/Nitro.vue'
+import Nuxt from '../../components/icons/Nuxt.vue'
+import ViteIcon from '../../components/icons/ViteIcon.vue'
+import Vitest from '../../components/icons/Vitest.vue'
+import Vue from '../../components/icons/Vue.vue'
+import OrbitingCircles from './OrbitingCircles.vue'
 </script>
 
 <template>

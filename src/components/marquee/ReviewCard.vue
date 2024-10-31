@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { cn } from "../../lib/utils";
+import { computed } from 'vue'
+import { cn } from '../../lib/utils'
 
 const props = defineProps<{
-  img: string;
-  name: string;
-  username: string;
-  body: string;
-}>();
+  img: string
+  name: string
+  username: string
+  body: string
+}>()
 
-const isDark = false;
+const isDark = false
 
 const theme = computed(() => {
   return isDark
-    ? "bg-gray-50/[.10] hover:bg-gray-50/[.15]"
-    : "border-gray-950/[.1] bg-gray-950/[.01] border-parent hover:bg-gray-950/[.05]";
-});
+    ? 'bg-gray-50/[.10] hover:bg-gray-50/[.15]'
+    : 'border-gray-950/[.1] bg-gray-950/[.01] border-parent hover:bg-gray-950/[.05]'
+})
 </script>
 
 <template>
@@ -23,7 +23,7 @@ const theme = computed(() => {
     :class="
       cn(
         'relative w-64 cursor-pointer overflow-hidden h-36 flex flex-col space-y-1 rounded-xl px-4',
-        theme,
+        theme
       )
     "
   >

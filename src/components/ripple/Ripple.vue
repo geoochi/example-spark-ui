@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
+import { cn } from '../../lib/utils'
 
 interface RippleProps {
-  mainCircleSize?: number;
-  mainCircleOpacity?: number;
-  numCircles?: number;
-  class?: string;
+  mainCircleSize?: number
+  mainCircleOpacity?: number
+  numCircles?: number
+  class?: string
 }
 
 const props = withDefaults(defineProps<RippleProps>(), {
   mainCircleSize: 210,
   mainCircleOpacity: 0.24,
   numCircles: 8,
-});
+})
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<RippleProps>(), {
     :class="
       cn(
         'absolute inset-0 bg-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)]',
-        props.class,
+        props.class
       )
     "
   >

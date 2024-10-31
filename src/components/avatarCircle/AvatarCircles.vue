@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
+import { cn } from '../../lib/utils'
 
 interface AvatarCirclesProps {
-  class?: string;
-  numPeople?: number;
-  avatarUrls: string[];
+  class?: string
+  numPeople?: number
+  avatarUrls: string[]
 }
 
-const props = defineProps<AvatarCirclesProps>();
+const props = defineProps<AvatarCirclesProps>()
 
-const className = cn("z-10 flex -space-x-4 rtl:space-x-reverse", props.class);
+const className = cn('z-10 flex -space-x-4 rtl:space-x-reverse', props.class)
 </script>
 
 <template>

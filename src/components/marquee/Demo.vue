@@ -1,45 +1,45 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import Marquee from "./Marquee.vue";
-import ReviewCard from "./ReviewCard.vue";
+import { computed } from 'vue'
+import Marquee from './Marquee.vue'
+import ReviewCard from './ReviewCard.vue'
 
-const isDark = false;
+const isDark = false
 
 const leftGradient = computed(() => {
   return isDark
-    ? "pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#000000] to-transparent"
-    : "pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white to-transparent";
-});
+    ? 'pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#000000] to-transparent'
+    : 'pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white to-transparent'
+})
 
 const rightGradient = computed(() => {
   return isDark
-    ? "pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#000000] to-transparent"
-    : "pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white to-transparent";
-});
+    ? 'pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#000000] to-transparent'
+    : 'pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white to-transparent'
+})
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
+    name: 'Jack',
+    username: '@jack',
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    img: 'https://avatar.vercel.sh/jack',
   },
   {
-    name: "Jill",
-    username: "@jill",
+    name: 'Jill',
+    username: '@jill',
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    img: 'https://avatar.vercel.sh/jill',
   },
   {
-    name: "John",
-    username: "@john",
+    name: 'John',
+    username: '@john',
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    img: 'https://avatar.vercel.sh/john',
   },
-];
+]
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length / 2)
+const secondRow = reviews.slice(reviews.length / 2)
 </script>
 
 <template>

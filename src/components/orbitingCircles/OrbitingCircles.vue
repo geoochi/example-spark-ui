@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
+import { cn } from '../../lib/utils'
 
 interface OrbitingCirclesProps {
-  class?: string;
-  reverse?: boolean;
-  duration?: number;
-  delay?: number;
-  radius?: number;
-  path?: boolean;
+  class?: string
+  reverse?: boolean
+  duration?: number
+  delay?: number
+  radius?: number
+  path?: boolean
 }
 
 const props = withDefaults(defineProps<OrbitingCirclesProps>(), {
@@ -15,13 +15,13 @@ const props = withDefaults(defineProps<OrbitingCirclesProps>(), {
   delay: 10,
   radius: 50,
   path: true,
-});
+})
 
 const className = cn(
-  "absolute flex size-full animate-reverse transform-gpu animate-orbit items-center justify-center rounded-full border bg-none [animation-delay:calc(var(--delay)*1000ms)]",
+  'absolute flex size-full animate-reverse transform-gpu animate-orbit items-center justify-center rounded-full border bg-none [animation-delay:calc(var(--delay)*1000ms)]',
   props.class,
-  { "animate-orbit-reverse": props.reverse },
-);
+  { 'animate-orbit-reverse': props.reverse }
+)
 </script>
 
 <template>

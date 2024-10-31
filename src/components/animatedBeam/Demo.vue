@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import AnimatedBeam from "./AnimatedBeam.vue";
-import Circle from "./Circle.vue";
+import { ref } from 'vue'
+import AnimatedBeam from './AnimatedBeam.vue'
+import Circle from './Circle.vue'
 
-const containerRef = ref();
-const div1Ref = ref();
-const div2Ref = ref();
-const div3Ref = ref();
-const div4Ref = ref();
-const div5Ref = ref();
-const div6Ref = ref();
-const div7Ref = ref();
+const containerRef = ref()
+const div1Ref = ref()
+const div2Ref = ref()
+const div3Ref = ref()
+const div4Ref = ref()
+const div5Ref = ref()
+const div6Ref = ref()
+const div7Ref = ref()
 </script>
 
 <template>

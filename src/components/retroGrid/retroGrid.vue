@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { cn } from "../../lib/utils";
+import { cn } from '../../lib/utils'
 
 const props = withDefaults(
   defineProps<{
-    angle?: number;
-    class?: string;
+    angle?: number
+    class?: string
   }>(),
   {
     angle: 65,
-  },
-);
+  }
+)
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const props = withDefaults(
     :class="
       cn(
         'selection:pointer-events-none absolute size-full overflow-hidden opacity-50 [perspective:200px]',
-        props.class,
+        props.class
       )
     "
     :style="{
@@ -34,7 +34,7 @@ const props = withDefaults(
 
             '[background-image:linear-gradient(to_right,rgba(0,0,0,0.3)_1px,transparent_0),linear-gradient(to_bottom,rgba(0,0,0,0.3)_1px,transparent_0)]',
 
-            'dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_0),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_0)]',
+            'dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_0),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_0)]'
           )
         "
       />
