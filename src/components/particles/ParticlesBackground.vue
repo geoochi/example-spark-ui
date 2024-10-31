@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
 import { computed } from "vue";
 
 const props = withDefaults(
@@ -11,10 +10,10 @@ const props = withDefaults(
   },
 );
 
-const { isDark } = useData();
+const isDark = false;
 
 const theme = computed(() => {
-  return isDark.value ? props.color : "red";
+  return isDark ? props.color : "red";
 });
 </script>
 

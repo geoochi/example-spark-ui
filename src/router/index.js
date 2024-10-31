@@ -13,6 +13,7 @@ import globe from "@/components/globe/Demo.vue";
 import gradualSpacing from "@/components/gradualSpacing/Demo.vue";
 import letterUp from "@/components/letterUp/Demo.vue";
 import marquee from "@/components/marquee/Demo.vue";
+import marquee3D from "@/components/marquee/3DDemo.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -41,6 +42,7 @@ const routes = [
   },
   { path: "/letterUp", name: "letterUp", component: letterUp },
   { path: "/marquee", name: "marquee", component: marquee },
+  { path: "/marquee3D", name: "marquee3D", component: marquee3D },
 ];
 
 const router = createRouter({

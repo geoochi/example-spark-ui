@@ -43,6 +43,7 @@ export default {
         { path: "/gradualSpacing", name: "gradualSpacing" },
         { path: "/letterUp", name: "letterUp" },
         { path: "/marquee", name: "marquee" },
+        { path: "/marquee3D", name: "marquee3D" },
       ],
     };
   },
