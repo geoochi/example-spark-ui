@@ -45,6 +45,11 @@ export default {
         { path: '/marquee', name: 'marquee' },
         { path: '/marquee3D', name: 'marquee3D' },
         { path: '/marqueeVertical', name: 'marqueeVertical' },
+        { path: '/meteors', name: 'meteors' },
+        { path: '/orbitingCircles', name: 'orbitingCircles' },
+        { path: '/particles', name: 'particles' },
+        { path: '/retroGrid', name: 'retroGrid' },
+        { path: '/ripple', name: 'ripple' },
       ],
     }
   },

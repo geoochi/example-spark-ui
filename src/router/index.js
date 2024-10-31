@@ -15,6 +15,11 @@ import letterUp from '@/components/letterUp/Demo.vue'
 import marquee from '@/components/marquee/Demo.vue'
 import marquee3D from '@/components/marquee/3DDemo.vue'
 import marqueeVertical from '@/components/marquee/VerticalDemo.vue'
+import meteors from '@/components/meteors/Demo.vue'
+import orbitingCircles from '@/components/orbitingCircles/Demo.vue'
+import particles from '@/components/particles/Demo.vue'
+import retroGrid from '@/components/retroGrid/Demo.vue'
+import ripple from '@/components/ripple/Demo.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -48,6 +53,31 @@ const routes = [
     path: '/marqueeVertical',
     name: 'marqueeVertical',
     component: marqueeVertical,
+  },
+  {
+    path: '/meteors',
+    name: 'meteors',
+    component: meteors,
+  },
+  {
+    path: '/orbitingCircles',
+    name: 'orbitingCircles',
+    component: orbitingCircles,
+  },
+  {
+    path: '/particles',
+    name: 'particles',
+    component: particles,
+  },
+  {
+    path: '/retroGrid',
+    name: 'retroGrid',
+    component: retroGrid,
+  },
+  {
+    path: '/ripple',
+    name: 'ripple',
+    component: ripple,
   },
 ]
 
