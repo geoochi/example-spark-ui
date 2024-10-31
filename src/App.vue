@@ -24,8 +24,8 @@ export default {
     return {
       routes: [
         { path: '/', name: 'Home' },
-        { path: '/page1', name: 'Page 1' },
-        { path: '/page2', name: 'Page 2' },
+        { path: '/AnimatedBeamDemo', name: 'AnimatedBeamDemo' },
+        { path: '/AnimatedGradientTextDemo', name: 'AnimatedGradientTextDemo' },
       ],
     }
   },

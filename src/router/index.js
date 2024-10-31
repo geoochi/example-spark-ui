@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
-import Page1 from '../components/Page1.vue'
-import Page2 from '../components/Page2.vue'
+import AnimatedBeamDemo from '@/components/animatedBeam/Demo.vue'
+import AnimatedGradientTextDemo from '@/components/animatedGradientText/Demo.vue'
 
 const routes = [
   {
@@ -10,14 +10,14 @@ const routes = [
     component: Home,
   },
   {
-    path: '/page1',
-    name: 'Page1',
-    component: Page1,
+    path: '/AnimatedBeamDemo',
+    name: 'AnimatedBeamDemo',
+    component: AnimatedBeamDemo,
   },
   {
-    path: '/page2',
-    name: 'Page2',
-    component: Page2,
+    path: '/AnimatedGradientTextDemo',
+    name: 'AnimatedGradientTextDemo',
+    component: AnimatedGradientTextDemo,
   },
 ]
 
