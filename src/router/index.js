@@ -20,6 +20,8 @@ import orbitingCircles from '@/components/orbitingCircles/Demo.vue'
 import particles from '@/components/particles/Demo.vue'
 import retroGrid from '@/components/retroGrid/Demo.vue'
 import ripple from '@/components/ripple/Demo.vue'
+import skewedInfiniteScroll from '@/components/skewedInfiniteScroll/Demo.vue'
+import typingAnimation from '@/components/typingAnimation/Demo.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -78,6 +80,16 @@ const routes = [
     path: '/ripple',
     name: 'ripple',
     component: ripple,
+  },
+  {
+    path: '/skewedInfiniteScroll',
+    name: 'skewedInfiniteScroll',
+    component: skewedInfiniteScroll,
+  },
+  {
+    path: '/typingAnimation',
+    name: 'typingAnimation',
+    component: typingAnimation,
   },
 ]
 

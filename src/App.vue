@@ -63,6 +63,8 @@ export default {
         { path: '/particles', name: 'particles' },
         { path: '/retroGrid', name: 'retroGrid' },
         { path: '/ripple', name: 'ripple' },
+        { path: '/skewedInfiniteScroll', name: 'skewedInfiniteScroll' },
+        { path: '/typingAnimation', name: 'typingAnimation' },
       ],
     }
   },
