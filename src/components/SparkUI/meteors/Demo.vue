@@ -4,10 +4,10 @@ import Meteors from './Meteors.vue'
 
 <template>
   <div
-    class="relative flex h-[450px] w-[300px] md:w-[500px] flex-col items-center justify-center overflow-hidden rounded-lg"
+    class="relative flex h-[450px] w-[300px] flex-col items-center justify-center overflow-hidden rounded-lg md:w-[500px]"
     border
   >
-    <div class="absolute top-10 inset-x-0">
+    <div class="absolute inset-x-0 top-10">
       <Meteors :number="30" />
     </div>
     <span

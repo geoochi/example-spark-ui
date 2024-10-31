@@ -43,7 +43,7 @@ const features = [
             <img :class="feat.background" />
           </div>
           <div
-            class="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 space-y-3 transition-all duration-300 group-hover:-translate-y-10"
+            class="pointer-events-none z-10 flex transform-gpu flex-col gap-1 space-y-3 p-6 transition-all duration-300 group-hover:-translate-y-10"
           >
             <Icon
               :icon="feat.icon"
@@ -65,7 +65,7 @@ const features = [
             <button class="pointer-events-auto">
               <a :href="feat.href">
                 {{ feat.cta }}
-                <Icon :icon="feat.icon" class="ml-2 text-white h-4 w-4" />
+                <Icon :icon="feat.icon" class="ml-2 h-4 w-4 text-white" />
               </a>
             </button>
           </div>

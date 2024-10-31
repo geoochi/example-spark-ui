@@ -6,13 +6,13 @@ import BlurFade from './BlurFade.vue'
   <div class="flex flex-col space-y-2">
     <BlurFade in-view :delay="250">
       <span
-        class="text-[45px] font-bold tracking-tighter dark:text-white leading-1"
+        class="leading-1 text-[45px] font-bold tracking-tighter dark:text-white"
       >
         Hello World 👋
       </span>
     </BlurFade>
     <BlurFade in-view :delay="350 * 2">
-      <span class="font-[500] text-[20px] dark:text-white tracking-tighter">
+      <span class="text-[20px] font-[500] tracking-tighter dark:text-white">
         Nice to meet you ✨
       </span>
     </BlurFade>

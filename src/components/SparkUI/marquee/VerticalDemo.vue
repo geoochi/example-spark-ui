@@ -44,7 +44,7 @@ const secondRow = reviews.slice(reviews.length / 2)
 
 <template>
   <div
-    class="relative flex h-[400px] w-[300px] lg:w-[550px] flex-row items-center justify-center overflow-hidden rounded-lg"
+    class="relative flex h-[400px] w-[300px] flex-row items-center justify-center overflow-hidden rounded-lg lg:w-[550px]"
   >
     <Marquee pause-on-hover vertical class="[--duration:20s]">
       <div v-for="{ img, name, username, body } in firstRow" :key="username">

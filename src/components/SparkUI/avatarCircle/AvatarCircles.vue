@@ -25,7 +25,7 @@ const className = cn('z-10 flex -space-x-4 rtl:space-x-reverse', props.class)
       />
     </div>
     <span
-      class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-black text-center text-xs font-medium text-white hover:bg-gray-600 dark:border-gray-800 dark:bg-white dark:hover:bg-white dark:text-black"
+      class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-black text-center text-xs font-medium text-white hover:bg-gray-600 dark:border-gray-800 dark:bg-white dark:text-black dark:hover:bg-white"
     >
       +{{ props.numPeople }}
     </span>

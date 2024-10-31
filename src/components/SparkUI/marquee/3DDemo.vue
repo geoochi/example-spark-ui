@@ -46,7 +46,7 @@ const logos = [
 
 <template>
   <div
-    class="relative flex h-[400px] w-[300px] lg:w-[550px] flex-col items-center justify-center gap-4 overflow-hidden rounded-lg border bg-background px-20 [perspective:300px]"
+    class="bg-background relative flex h-[400px] w-[300px] flex-col items-center justify-center gap-4 overflow-hidden rounded-lg border px-20 [perspective:300px] lg:w-[550px]"
   >
     <div class="flex flex-row gap-4">
       <Marquee

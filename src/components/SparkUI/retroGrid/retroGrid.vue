@@ -16,7 +16,7 @@ const props = withDefaults(
   <div
     :class="
       cn(
-        'selection:pointer-events-none absolute size-full overflow-hidden opacity-50 [perspective:200px]',
+        'absolute size-full overflow-hidden opacity-50 [perspective:200px] selection:pointer-events-none',
         props.class
       )
     "
@@ -40,7 +40,7 @@ const props = withDefaults(
       />
     </div>
     <div
-      class="absolute inset-0 bg-gradient-to-t from-white to-transparent dark:from-black to-90%"
+      class="absolute inset-0 bg-gradient-to-t from-white to-transparent to-90% dark:from-black"
     />
   </div>
 </template>

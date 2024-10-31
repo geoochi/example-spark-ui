@@ -84,11 +84,11 @@ function handleTouchMove(e: TouchEvent) {
 
 <template>
   <div
-    class="absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px] top-44"
+    class="absolute inset-0 top-44 mx-auto aspect-[1/1] w-full max-w-[600px]"
   >
     <canvas
       ref="canvasRef"
-      class="w-[500px] h-[500px] cursor-grab opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
+      class="h-[500px] w-[500px] cursor-grab opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
       width="1000"
       height="1000"
       @pointerdown="handlePointerDown"

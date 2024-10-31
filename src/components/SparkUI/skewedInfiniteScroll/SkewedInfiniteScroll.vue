@@ -24,12 +24,12 @@ const currentTheme = computed(() => (isDark ? '#1f2937' : '#f3f4f6'))
         }"
       >
         <div
-          class="mx-auto h-96 md:h-full grid animate-skew-scroll grid-cols-1 gap-5 sm:grid-cols-2"
+          class="animate-skew-scroll mx-auto grid h-96 grid-cols-1 gap-5 sm:grid-cols-2 md:h-full"
         >
           <div v-for="item in props.items" :key="item.id">
             <div
               :key="item.id"
-              class="flex cursor-pointer w-56 md:w-56 lg:w-72 px-6 py-1 items-center space-x-2 rounded-md border-parent shadow-md transition-all hover:-translate-y-1 hover:translate-x-1 hover:scale-[1.025] hover:shadow-xl"
+              class="border-parent flex w-56 cursor-pointer items-center space-x-2 rounded-md px-6 py-1 shadow-md transition-all hover:-translate-y-1 hover:translate-x-1 hover:scale-[1.025] hover:shadow-xl md:w-56 lg:w-72"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -22,7 +22,7 @@ const theme = computed(() => {
   <div
     :class="
       cn(
-        'relative w-64 cursor-pointer overflow-hidden h-36 flex flex-col space-y-1 rounded-xl px-4',
+        'relative flex h-36 w-64 cursor-pointer flex-col space-y-1 overflow-hidden rounded-xl px-4',
         theme
       )
     "

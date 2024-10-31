@@ -1,10 +1,10 @@
 <template>
   <div class="flex h-screen">
     <!-- Sidebar navigation with fixed header and scrollable content -->
-    <nav class="w-64 bg-gray-50 border-r flex flex-col">
+    <nav class="flex w-64 flex-col border-r bg-gray-50">
       <!-- Fixed Header -->
       <RouterLink to="/">
-        <div class="p-4 border-b">
+        <div class="border-b p-4">
           <h1 class="text-xl font-bold text-gray-800">Spark UI examples</h1>
         </div>
       </RouterLink>
@@ -15,7 +15,7 @@
           <li v-for="route in routes" :key="route.path">
             <RouterLink
               :to="route.path"
-              class="block px-4 py-2 rounded transition-colors text-gray-700 hover:bg-gray-100"
+              class="block rounded px-4 py-2 text-gray-700 transition-colors hover:bg-gray-100"
               exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
             >
               {{ route.name }}
@@ -33,7 +33,7 @@
     </nav>
 
     <!-- Main content -->
-    <main class="flex-1 p-4 overflow-auto">
+    <main class="flex-1 overflow-auto p-4">
       <RouterView></RouterView>
     </main>
   </div>

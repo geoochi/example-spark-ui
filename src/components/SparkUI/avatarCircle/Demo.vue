@@ -10,7 +10,7 @@ const avatarUrls = [
 </script>
 
 <template>
-  <div class="grid place-items-center w-full min-h-screen">
+  <div class="grid min-h-screen w-full place-items-center">
     <AvatarCircles :num-people="99" :avatar-urls="avatarUrls" />
   </div>
 </template>

@@ -16,7 +16,7 @@ const className = cn(
 
 <template>
   <figure :class="className">
-    <div class="flex flex-row border rounded-xl items-center px-2 gap-4">
+    <div class="flex flex-row items-center gap-4 rounded-xl border px-2">
       <div
         class="flex size-10 items-center justify-center rounded-2xl"
         :style="{ backgroundColor: props.color }"
@@ -28,7 +28,7 @@ const className = cn(
           class="flex flex-row items-center whitespace-pre text-lg font-medium"
         >
           <span
-            class="text-sm text-black dark:text-white font-semibold sm:text-lg"
+            class="text-sm font-semibold text-black sm:text-lg dark:text-white"
             >{{ props.name }}</span
           >
           <span class="mx-1">·</span>

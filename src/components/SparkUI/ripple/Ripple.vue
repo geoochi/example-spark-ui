@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<RippleProps>(), {
     <div v-for="(_, i) in Array.from({ length: props.numCircles })" :key="i">
       <div
         :key="i"
-        class="absolute animate-ripple rounded-full bg-[#0000]/25 dark:bg-[#fff]/25 shadow-xl"
+        class="animate-ripple absolute rounded-full bg-[#0000]/25 shadow-xl dark:bg-[#fff]/25"
         :style="{
           width: `${props.mainCircleSize + i * 70}px`,
           height: `${props.mainCircleSize + i * 70}px`,

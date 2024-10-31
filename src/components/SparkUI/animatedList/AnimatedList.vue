@@ -77,7 +77,7 @@ function getLeave() {
   <div
     :class="
       cn(
-        'w-[250px] h-[370px] md:w-[600px] overflow-auto rounded-lg',
+        'h-[370px] w-[250px] overflow-auto rounded-lg md:w-[600px]',
         $props.class
       )
     "
@@ -95,7 +95,7 @@ function getLeave() {
         :initial="getInitial(idx)"
         :enter="getEnter(idx)"
         :leave="getLeave()"
-        :class="cn('mx-auto w-full mb-4')"
+        :class="cn('mx-auto mb-4 w-full')"
       >
         <component :is="item" />
       </div>

@@ -23,10 +23,10 @@ const div7Ref = ref()
 <template>
   <div
     ref="containerRef"
-    class="relative flex w-[300px] px-4 md:p-0 md:w-[700px] items-center justify-center overflow-hidden rounded-lg border"
+    class="relative flex w-[300px] items-center justify-center overflow-hidden rounded-lg border px-4 md:w-[700px] md:p-0"
   >
     <div
-      class="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg"
+      class="flex size-full max-w-lg flex-row items-stretch justify-between gap-10"
     >
       <div class="flex flex-col justify-center gap-2">
         <Circle ref="div1Ref">

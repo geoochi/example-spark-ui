@@ -11,7 +11,7 @@ import AnimatedGradientText from './animatedGradientText.vue'
     <span
       :class="
         cn(
-          `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+          `animate-gradient inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
         )
       "
     >
@@ -19,7 +19,7 @@ import AnimatedGradientText from './animatedGradientText.vue'
     </span>
     <Icon
       icon="ic:sharp-keyboard-arrow-right"
-      class="ml-1 size-3 transition-transform w-4 h-4 text-black dark:text-white duration-300 ease-in-out group-hover:translate-x-0.5"
+      class="ml-1 size-3 h-4 w-4 text-black transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 dark:text-white"
     />
   </AnimatedGradientText>
 </template>

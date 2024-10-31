@@ -9,7 +9,7 @@ import OrbitingCircles from './OrbitingCircles.vue'
 
 <template>
   <div
-    class="relative flex h-[500px] w-[300px] md:w-[600px] flex-col items-center justify-center overflow-hidden"
+    class="relative flex h-[500px] w-[300px] flex-col items-center justify-center overflow-hidden md:w-[600px]"
   >
     <span
       class="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black"

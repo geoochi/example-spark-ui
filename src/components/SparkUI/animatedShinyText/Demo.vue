@@ -5,7 +5,7 @@ import AnimatedShinyText from './AnimatedShinyText.vue'
 </script>
 
 <template>
-  <div class="grid place-items-center min-h-screen w-full">
+  <div class="grid min-h-screen w-full place-items-center">
     <div class="z-10 flex min-h-[16rem] items-center justify-center">
       <div
         :class="
@@ -20,7 +20,7 @@ import AnimatedShinyText from './AnimatedShinyText.vue'
           <span>✨ Introducing Spark UI</span>
           <Icon
             icon="ic:sharp-keyboard-arrow-right"
-            class="ml-1 text-neutral-400 w-5 h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
+            class="ml-1 h-5 w-5 text-neutral-400 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
           />
         </AnimatedShinyText>
       </div>

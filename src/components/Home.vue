@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="text-2xl font-bold mb-4">
+    <h1 class="mb-4 text-2xl font-bold">
       Reference repo 👉
       <a
-        class="underline text-blue-500"
+        class="text-blue-500 underline"
         href="https://spark-ui.dev/"
         target="_blank"
         >Spark UI</a
