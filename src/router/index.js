@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
-import AnimatedBeam from '@/components/animatedBeam/Demo.vue'
-import AnimatedGradientText from '@/components/animatedGradientText/Demo.vue'
-import AnimatedList from '@/components/animatedList/Demo.vue'
-import AnimatedShinyText from '@/components/animatedShinyText/Demo.vue'
-import AvatarCircle from '@/components/avatarCircle/Demo.vue'
+import animatedBeam from '@/components/animatedBeam/Demo.vue'
+import animatedGradientText from '@/components/animatedGradientText/Demo.vue'
+import animatedList from '@/components/animatedList/Demo.vue'
+import animatedShinyText from '@/components/animatedShinyText/Demo.vue'
+import avatarCircle from '@/components/avatarCircle/Demo.vue'
+import bento from '@/components/bento/Demo.vue'
+import blurFade from '@/components/blurFade/Demo.vue'
+import blurIn from '@/components/blurIn/Demo.vue'
 
 const routes = [
   {
@@ -13,29 +16,44 @@ const routes = [
     component: Home,
   },
   {
-    path: '/AnimatedBeam',
-    name: 'AnimatedBeam',
-    component: AnimatedBeam,
+    path: '/animatedBeam',
+    name: 'animatedBeam',
+    component: animatedBeam,
   },
   {
-    path: '/AnimatedGradientText',
-    name: 'AnimatedGradientText',
-    component: AnimatedGradientText,
+    path: '/animatedGradientText',
+    name: 'animatedGradientText',
+    component: animatedGradientText,
   },
   {
-    path: '/AnimatedList',
-    name: 'AnimatedList',
-    component: AnimatedList,
+    path: '/animatedList',
+    name: 'animatedList',
+    component: animatedList,
   },
   {
-    path: '/AnimatedShinyText',
-    name: 'AnimatedShinyText',
-    component: AnimatedShinyText,
+    path: '/animatedShinyText',
+    name: 'animatedShinyText',
+    component: animatedShinyText,
   },
   {
-    path: '/AvatarCircle',
-    name: 'AvatarCircle',
-    component: AvatarCircle,
+    path: '/avatarCircle',
+    name: 'avatarCircle',
+    component: avatarCircle,
+  },
+  {
+    path: '/bento',
+    name: 'bento',
+    component: bento,
+  },
+  {
+    path: '/blurFade',
+    name: 'blurFade',
+    component: blurFade,
+  },
+  {
+    path: '/blurIn',
+    name: 'blurIn',
+    component: blurIn,
   },
 ]
 

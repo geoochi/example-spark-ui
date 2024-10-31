@@ -29,11 +29,14 @@ export default {
     return {
       routes: [
         { path: '/', name: 'Home' },
-        { path: '/AnimatedBeam', name: 'AnimatedBeam' },
-        { path: '/AnimatedGradientText', name: 'AnimatedGradientText' },
-        { path: '/AnimatedList', name: 'AnimatedList' },
-        { path: '/AnimatedShinyText', name: 'AnimatedShinyText' },
-        { path: '/AvatarCircle', name: 'AvatarCircle' },
+        { path: '/animatedBeam', name: 'animatedBeam' },
+        { path: '/animatedGradientText', name: 'animatedGradientText' },
+        { path: '/animatedList', name: 'animatedList' },
+        { path: '/animatedShinyText', name: 'animatedShinyText' },
+        { path: '/avatarCircle', name: 'avatarCircle' },
+        { path: '/bento', name: 'bento' },
+        { path: '/blurFade', name: 'blurFade' },
+        { path: '/blurIn', name: 'blurIn' },
       ],
     }
   },
