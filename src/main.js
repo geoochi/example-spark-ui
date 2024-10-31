@@ -1,4 +1,3 @@
-// src/main.js
 import { createApp } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'
 import './asset/css/tailwind.css'

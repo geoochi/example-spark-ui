@@ -1,4 +1,3 @@
-// src/App.vue
 <template>
   <div class="container mx-auto p-4">
     <nav class="mb-8">
@@ -25,7 +24,6 @@
       </RouterLink>
     </nav>
 
-    <!-- Router outlet where page components will be rendered -->
     <RouterView></RouterView>
   </div>
 </template>
