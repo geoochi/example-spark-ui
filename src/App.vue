@@ -38,6 +38,7 @@ export default {
         { path: '/blurFade', name: 'blurFade' },
         { path: '/blurIn', name: 'blurIn' },
         { path: '/dotPattern', name: 'dotPattern' },
+        { path: '/globe', name: 'globe' },
       ],
     }
   },

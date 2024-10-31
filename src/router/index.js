@@ -9,6 +9,7 @@ import bento from '@/components/bento/Demo.vue'
 import blurFade from '@/components/blurFade/Demo.vue'
 import blurIn from '@/components/blurIn/Demo.vue'
 import dotPattern from '@/components/dotPattern/Demo.vue'
+import globe from '@/components/globe/Demo.vue'
 
 const routes = [
   {
@@ -60,6 +61,11 @@ const routes = [
     path: '/dotPattern',
     name: 'dotPattern',
     component: dotPattern,
+  },
+  {
+    path: '/globe',
+    name: 'globe',
+    component: globe,
   },
 ]
 
