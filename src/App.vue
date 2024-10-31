@@ -39,6 +39,9 @@ export default {
         { path: '/blurIn', name: 'blurIn' },
         { path: '/dotPattern', name: 'dotPattern' },
         { path: '/globe', name: 'globe' },
+        { path: '/gradualSpacing', name: 'gradualSpacing' },
+        { path: '/letterUp', name: 'letterUp' },
+        { path: '/marquee', name: 'marquee' },
       ],
     }
   },

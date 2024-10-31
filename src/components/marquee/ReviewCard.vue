@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import { useData } from 'vitepress'
 import { computed } from 'vue'
 import { cn } from '../../lib/utils'
 
@@ -10,10 +9,10 @@ const props = defineProps<{
   body: string
 }>()
 
-const { isDark } = useData()
+const isDark = false
 
 const theme = computed(() => {
-  return isDark.value ? 'bg-gray-50/[.10] hover:bg-gray-50/[.15]' : 'border-gray-950/[.1] bg-gray-950/[.01] border-parent hover:bg-gray-950/[.05]'
+  return isDark ? 'bg-gray-50/[.10] hover:bg-gray-50/[.15]' : 'border-gray-950/[.1] bg-gray-950/[.01] border-parent hover:bg-gray-950/[.05]'
 })
 </script>
 
