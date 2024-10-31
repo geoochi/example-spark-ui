@@ -5,7 +5,7 @@
       <!-- Fixed Header -->
       <RouterLink to="/spark-ui-examples">
         <div class="border-b p-4">
-          <h1 class="text-xl font-bold text-gray-800">Spark UI examples</h1>
+          <h1 class="text-xl font-bold text-gray-800">Spark UI Examples</h1>
         </div>
       </RouterLink>
 
