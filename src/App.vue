@@ -1,29 +1,33 @@
 <template>
   <div class="container mx-auto p-4">
     <nav class="mb-8">
-      <RouterLink 
-        to="/" 
-        class="mr-4 px-4 py-2 rounded hover:bg-gray-100"
-        active-class="bg-blue-500 text-white"
-      >
-        Home
-      </RouterLink>
-      <RouterLink 
-        to="/page1" 
-        class="mr-4 px-4 py-2 rounded hover:bg-gray-100"
-        active-class="bg-blue-500 text-white"
-      >
-        Page 1
-      </RouterLink>
-      <RouterLink 
-        to="/page2" 
-        class="mr-4 px-4 py-2 rounded hover:bg-gray-100"
-        active-class="bg-blue-500 text-white"
-      >
-        Page 2
-      </RouterLink>
+      <ul class="flex flex-wrap gap-2">
+        <li v-for="route in routes" :key="route.path">
+          <RouterLink
+            :to="route.path"
+            class="mr-4 px-4 py-2 rounded transition-color hover:bg-gray-100"
+            exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
+          >
+            {{ route.name }}
+          </RouterLink>
+        </li>
+      </ul>
     </nav>
 
     <RouterView></RouterView>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      routes: [
+        { path: '/', name: 'Home' },
+        { path: '/page1', name: 'Page 1' },
+        { path: '/page2', name: 'Page 2' },
+      ],
+    }
+  },
+}
+</script>
