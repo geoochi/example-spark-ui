@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Nuxt from '../../components/icons/Nuxt.vue'
-import Vue from '../../components/icons/Vue.vue'
-import AnimatedBeam from '../../components/spark-ui/animatedBeam/AnimatedBeam.vue'
-import Circle from '../../components/spark-ui/animatedBeam/Circle.vue'
+import { ref } from "vue";
+import Nuxt from "../../components/icons/Nuxt.vue";
+import Vue from "../../components/icons/Vue.vue";
+import AnimatedBeam from "../../components/spark-ui/animatedBeam/AnimatedBeam.vue";
+import Circle from "../../components/spark-ui/animatedBeam/Circle.vue";
 
-const containerRef = ref<HTMLDivElement>()
-const div1Ref = ref()
-const div2Ref = ref()
+const containerRef = ref<HTMLDivElement>();
+const div1Ref = ref();
+const div2Ref = ref();
 </script>
 
 <template>
@@ -25,6 +25,11 @@ const div2Ref = ref()
         </Circle>
       </div>
     </div>
-    <AnimatedBeam :duration="3" :container-ref="containerRef" :from-ref="div1Ref" :to-ref="div2Ref" />
+    <AnimatedBeam
+      :duration="3"
+      :container-ref="containerRef"
+      :from-ref="div1Ref"
+      :to-ref="div2Ref"
+    />
   </div>
 </template>

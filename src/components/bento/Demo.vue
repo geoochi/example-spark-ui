@@ -1,37 +1,37 @@
-<script setup lang='ts'>
-import { Icon } from '@iconify/vue'
-import BentoCard from './BentoCard.vue'
-import BentoGrid from './BentoGrid.vue'
+<script setup lang="ts">
+import { Icon } from "@iconify/vue";
+import BentoCard from "./BentoCard.vue";
+import BentoGrid from "./BentoGrid.vue";
 
 const features = [
   {
-    icon: 'radix-icons:file-text',
-    name: 'Save your files',
-    description: 'We automatically save your files as you type.',
-    href: '/',
-    cta: 'Learn more',
-    background: 'absolute -right-20 -top-20 opacity-60',
-    class: 'col-span-3 lg:col-span-1',
+    icon: "radix-icons:file-text",
+    name: "Save your files",
+    description: "We automatically save your files as you type.",
+    href: "/",
+    cta: "Learn more",
+    background: "absolute -right-20 -top-20 opacity-60",
+    class: "col-span-3 lg:col-span-1",
   },
   {
-    icon: 'radix-icons:input',
-    name: 'Full text search',
-    description: 'Search through all your files in one place.',
-    href: '/',
-    cta: 'Learn more',
-    background: 'absolute -right-20 -top-20 opacity-60',
-    class: 'col-span-3 lg:col-span-1',
+    icon: "radix-icons:input",
+    name: "Full text search",
+    description: "Search through all your files in one place.",
+    href: "/",
+    cta: "Learn more",
+    background: "absolute -right-20 -top-20 opacity-60",
+    class: "col-span-3 lg:col-span-1",
   },
   {
-    icon: 'radix-icons:globe',
-    name: 'Multilingual',
-    description: 'Supports 100+ languages and counting.',
-    href: '/',
-    cta: 'Learn more',
-    background: 'absolute -right-20 -top-20 opacity-60',
-    class: 'col-span-3 lg:col-span-2',
+    icon: "radix-icons:globe",
+    name: "Multilingual",
+    description: "Supports 100+ languages and counting.",
+    href: "/",
+    cta: "Learn more",
+    background: "absolute -right-20 -top-20 opacity-60",
+    class: "col-span-3 lg:col-span-2",
   },
-]
+];
 </script>
 
 <template>
@@ -40,16 +40,18 @@ const features = [
       <div v-for="feat in features" :key="feat.name" :class="feat.class">
         <BentoCard :name="feat.name" class="h-48">
           <div>
-            <img :class="feat.background">
+            <img :class="feat.background" />
           </div>
           <div
-            class="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6  space-y-3 transition-all duration-300 group-hover:-translate-y-10"
+            class="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 space-y-3 transition-all duration-300 group-hover:-translate-y-10"
           >
             <Icon
               :icon="feat.icon"
               class="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75"
             />
-            <h3 class="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+            <h3
+              class="text-xl font-semibold text-neutral-700 dark:text-neutral-300"
+            >
               {{ feat.name }}
             </h3>
             <p class="max-w-lg text-neutral-400">

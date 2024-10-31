@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import AnimatedBeam from './AnimatedBeam.vue'
-import Circle from './Circle.vue'
+import { ref } from "vue";
+import AnimatedBeam from "./AnimatedBeam.vue";
+import Circle from "./Circle.vue";
 
-const containerRef = ref()
-const div1Ref = ref()
-const div2Ref = ref()
-const div3Ref = ref()
-const div4Ref = ref()
-const div5Ref = ref()
-const div6Ref = ref()
-const div7Ref = ref()
+const containerRef = ref();
+const div1Ref = ref();
+const div2Ref = ref();
+const div3Ref = ref();
+const div4Ref = ref();
+const div5Ref = ref();
+const div6Ref = ref();
+const div7Ref = ref();
 </script>
 
 <template>
@@ -18,10 +18,17 @@ const div7Ref = ref()
     ref="containerRef"
     class="relative flex w-[300px] px-4 md:p-0 md:w-[700px] items-center justify-center overflow-hidden rounded-lg border bg-background"
   >
-    <div class="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
+    <div
+      class="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg"
+    >
       <div class="flex flex-col justify-center gap-2">
         <Circle ref="div1Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 128 128">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 128 128"
+          >
             <g fill="#61DAFB">
               <circle cx="64" cy="64" r="11.4" />
               <path
@@ -31,7 +38,12 @@ const div7Ref = ref()
           </svg>
         </Circle>
         <Circle ref="div2Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
             <path
               fill="#ff3e00"
               d="M26.47 5.7a8.973 8.973 0 0 0-11.793-2.454L7.96 7.4a7.46 7.46 0 0 0-3.481 5.009a7.7 7.7 0 0 0 .8 5.058a7.4 7.4 0 0 0-1.151 2.8a7.8 7.8 0 0 0 1.4 6.028a8.977 8.977 0 0 0 11.794 2.458L24.04 24.6a7.47 7.47 0 0 0 3.481-5.009a7.67 7.67 0 0 0-.8-5.062a7.35 7.35 0 0 0 1.152-2.8A7.8 7.8 0 0 0 26.47 5.7"
@@ -43,7 +55,12 @@ const div7Ref = ref()
           </svg>
         </Circle>
         <Circle ref="div3Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22.39" height="32" viewBox="0 0 256 366">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22.39"
+            height="32"
+            viewBox="0 0 256 366"
+          >
             <path
               d="M182.022 9.147c2.982 3.702 4.502 8.697 7.543 18.687L256 246.074a276.5 276.5 0 0 0-79.426-26.891L133.318 73.008a5.63 5.63 0 0 0-10.802.017L79.784 219.11A276.5 276.5 0 0 0 0 246.04L66.76 27.783c3.051-9.972 4.577-14.959 7.559-18.654a24.54 24.54 0 0 1 9.946-7.358C88.67 0 93.885 0 104.314 0h47.683c10.443 0 15.664 0 20.074 1.774a24.55 24.55 0 0 1 9.95 7.373"
             />
@@ -54,10 +71,20 @@ const div7Ref = ref()
           </svg>
         </Circle>
         <Circle ref="div4Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 128 128">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 128 128"
+          >
             <linearGradient
-              id="deviconAngular0" x1="14.704" x2="110.985" y1="46.27" y2="92.024"
-              gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse"
+              id="deviconAngular0"
+              x1="14.704"
+              x2="110.985"
+              y1="46.27"
+              y2="92.024"
+              gradientTransform="matrix(1 0 0 -1 0 130)"
+              gradientUnits="userSpaceOnUse"
             >
               <stop offset="0" stop-color="#e40035" />
               <stop offset=".24" stop-color="#f60a48" />
@@ -71,8 +98,13 @@ const div7Ref = ref()
               d="m124.5 21.3l-4.4 68.6L78.3 0zm-29 88.7L64 128l-31.5-18l6.4-15.5h50.3zM64 34.1l16.5 40.2h-33zM7.9 89.9L3.5 21.3L49.7 0z"
             />
             <linearGradient
-              id="deviconAngular1" x1="28.733" x2="91.742" y1="117.071" y2="45.195"
-              gradientTransform="matrix(1 0 0 -1 0 130)" gradientUnits="userSpaceOnUse"
+              id="deviconAngular1"
+              x1="28.733"
+              x2="91.742"
+              y1="117.071"
+              y2="45.195"
+              gradientTransform="matrix(1 0 0 -1 0 130)"
+              gradientUnits="userSpaceOnUse"
             >
               <stop offset="0" stop-color="#ff31d9" />
               <stop offset="1" stop-color="#ff5be1" stop-opacity="0" />
@@ -84,7 +116,12 @@ const div7Ref = ref()
           </svg>
         </Circle>
         <Circle ref="div5Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30.12" height="32" viewBox="0 0 256 272">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30.12"
+            height="32"
+            viewBox="0 0 256 272"
+          >
             <path
               fill="#18B6F6"
               d="m224.803 271.548l-48.76-48.483l-.744.107v-.532L71.606 120.252l25.55-24.667l-15.01-86.12l-71.222 88.247c-12.136 12.226-14.372 32.109-5.642 46.781l44.5 73.788c6.813 11.376 19.163 18.18 32.47 18.074l22.038-.213z"
@@ -102,13 +139,30 @@ const div7Ref = ref()
       </div>
       <div class="flex flex-col justify-center">
         <Circle ref="div6Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="31.88" height="32" viewBox="0 0 256 257">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="31.88"
+            height="32"
+            viewBox="0 0 256 257"
+          >
             <defs>
-              <linearGradient id="logosVitejs0" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%">
+              <linearGradient
+                id="logosVitejs0"
+                x1="-.828%"
+                x2="57.636%"
+                y1="7.652%"
+                y2="78.411%"
+              >
                 <stop offset="0%" stop-color="#41D1FF" />
                 <stop offset="100%" stop-color="#BD34FE" />
               </linearGradient>
-              <linearGradient id="logosVitejs1" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%">
+              <linearGradient
+                id="logosVitejs1"
+                x1="43.376%"
+                x2="50.316%"
+                y1="2.242%"
+                y2="89.03%"
+              >
                 <stop offset="0%" stop-color="#FFEA83" />
                 <stop offset="8.333%" stop-color="#FFDD35" />
                 <stop offset="100%" stop-color="#FFA800" />
@@ -127,7 +181,12 @@ const div7Ref = ref()
       </div>
       <div class="flex flex-col justify-center">
         <Circle ref="div7Ref">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 128 128">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 128 128"
+          >
             <path
               fill="none"
               d="m0 8.934l49.854.158l14.167 24.47l14.432-24.47L128 8.935l-63.834 110.14zm126.98.637l-24.36.02l-38.476 66.053L25.691 9.592L.942 9.572l63.211 107.89zm-25.149-.008l-22.745.168l-15.053 24.647L49.216 9.73l-22.794-.168l37.731 64.476zm-75.834-.17l23.002.009m-23.002-.01l23.002.01"
@@ -144,11 +203,41 @@ const div7Ref = ref()
         </Circle>
       </div>
     </div>
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div1Ref" :to-ref="div6Ref" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div2Ref" :to-ref="div6Ref" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div3Ref" :to-ref="div6Ref" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div4Ref" :to-ref="div6Ref" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div5Ref" :to-ref="div6Ref" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div6Ref" :to-ref="div7Ref" />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div1Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div2Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div3Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div4Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div5Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div6Ref"
+      :to-ref="div7Ref"
+    />
   </div>
 </template>

@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Angular from '../../components/icons/Angular.vue'
-import Astro from '../../components/icons/Astro.vue'
-import Qwik from '../../components/icons/Qwik.vue'
-import React from '../../components/icons/React.vue'
-import Svelte from '../../components/icons/Svelte.vue'
-import Vite from '../../components/icons/ViteIcon.vue'
-import Vue from '../../components/icons/Vue.vue'
-import AnimatedBeam from '../../components/spark-ui/animatedBeam/AnimatedBeam.vue'
-import Circle from '../../components/spark-ui/animatedBeam/Circle.vue'
+import { ref } from "vue";
+import Angular from "../../components/icons/Angular.vue";
+import Astro from "../../components/icons/Astro.vue";
+import Qwik from "../../components/icons/Qwik.vue";
+import React from "../../components/icons/React.vue";
+import Svelte from "../../components/icons/Svelte.vue";
+import Vite from "../../components/icons/ViteIcon.vue";
+import Vue from "../../components/icons/Vue.vue";
+import AnimatedBeam from "../../components/spark-ui/animatedBeam/AnimatedBeam.vue";
+import Circle from "../../components/spark-ui/animatedBeam/Circle.vue";
 
-const containerRef = ref<HTMLDivElement>()
-const div1Ref = ref()
-const div2Ref = ref()
-const div3Ref = ref()
-const div4Ref = ref()
-const div5Ref = ref()
-const div6Ref = ref()
-const div7Ref = ref()
+const containerRef = ref<HTMLDivElement>();
+const div1Ref = ref();
+const div2Ref = ref();
+const div3Ref = ref();
+const div4Ref = ref();
+const div5Ref = ref();
+const div6Ref = ref();
+const div7Ref = ref();
 </script>
 
 <template>
@@ -25,7 +25,9 @@ const div7Ref = ref()
     ref="containerRef"
     class="relative flex w-[300px] px-4 md:p-0 md:w-[700px] items-center justify-center overflow-hidden rounded-lg border"
   >
-    <div class="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
+    <div
+      class="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg"
+    >
       <div class="flex flex-col justify-center gap-2">
         <Circle ref="div1Ref">
           <React />
@@ -54,11 +56,35 @@ const div7Ref = ref()
         </Circle>
       </div>
     </div>
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div1Ref" :to-ref="div6Ref" />
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div2Ref" :to-ref="div6Ref" />
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div3Ref" :to-ref="div6Ref" />
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div4Ref" :to-ref="div6Ref" />
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div5Ref" :to-ref="div6Ref" />
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div6Ref" :to-ref="div7Ref" />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div1Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div2Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div3Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div4Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div5Ref"
+      :to-ref="div6Ref"
+    />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div6Ref"
+      :to-ref="div7Ref"
+    />
   </div>
 </template>

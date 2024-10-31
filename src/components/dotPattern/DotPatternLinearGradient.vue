@@ -1,6 +1,6 @@
-<script setup lang='ts'>
-import { cn } from '../../lib/utils'
-import DotPattern from './DotPattern.vue'
+<script setup lang="ts">
+import { cn } from "../../lib/utils";
+import DotPattern from "./DotPattern.vue";
 </script>
 
 <template>
@@ -13,9 +13,16 @@ import DotPattern from './DotPattern.vue'
       Dot Pattern
     </p>
     <DotPattern
-      :width="20" :height="20" :cx="1" :cy="1" :cr="1" :class="cn(
-        '[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]',
-      )"
+      :width="20"
+      :height="20"
+      :cx="1"
+      :cy="1"
+      :cr="1"
+      :class="
+        cn(
+          '[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]',
+        )
+      "
     />
   </div>
 </template>

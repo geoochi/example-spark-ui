@@ -1,6 +1,6 @@
-<script setup lang='ts'>
-import HeroParticles from './Particles.vue'
-import HeroBackground from './ParticlesBackground.vue'
+<script setup lang="ts">
+import HeroParticles from "./Particles.vue";
+import HeroBackground from "./ParticlesBackground.vue";
 </script>
 
 <template>

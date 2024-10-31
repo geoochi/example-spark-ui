@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Nuxt from '../../components/icons/Nuxt.vue'
-import Vue from '../../components/icons/Vue.vue'
-import AnimatedBeam from '../../components/spark-ui/animatedBeam/AnimatedBeam.vue'
-import Circle from '../../components/spark-ui/animatedBeam/Circle.vue'
+import { ref } from "vue";
+import Nuxt from "../../components/icons/Nuxt.vue";
+import Vue from "../../components/icons/Vue.vue";
+import AnimatedBeam from "../../components/spark-ui/animatedBeam/AnimatedBeam.vue";
+import Circle from "../../components/spark-ui/animatedBeam/Circle.vue";
 
-const containerRef = ref<HTMLDivElement>()
-const div1Ref = ref()
-const div2Ref = ref()
+const containerRef = ref<HTMLDivElement>();
+const div1Ref = ref();
+const div2Ref = ref();
 </script>
 
 <template>
@@ -25,7 +25,22 @@ const div2Ref = ref()
         </Circle>
       </div>
     </div>
-    <AnimatedBeam :container-ref="containerRef" :from-ref="div1Ref" :to-ref="div2Ref" :start-y-offset="10" :end-y-offset="10" :curvature="-20" />
-    <AnimatedBeam reverse :container-ref="containerRef" :from-ref="div1Ref" :to-ref="div2Ref" :start-y-offset="-10" :end-y-offset="-10" :curvature="20" />
+    <AnimatedBeam
+      :container-ref="containerRef"
+      :from-ref="div1Ref"
+      :to-ref="div2Ref"
+      :start-y-offset="10"
+      :end-y-offset="10"
+      :curvature="-20"
+    />
+    <AnimatedBeam
+      reverse
+      :container-ref="containerRef"
+      :from-ref="div1Ref"
+      :to-ref="div2Ref"
+      :start-y-offset="-10"
+      :end-y-offset="-10"
+      :curvature="20"
+    />
   </div>
 </template>

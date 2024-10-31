@@ -1,6 +1,7 @@
 <template>
   <!-- Remove mx-auto to allow full-width, or keep it for centered layout -->
-  <div class="flex h-screen"> <!-- Added h-screen for full height -->
+  <div class="flex h-screen">
+    <!-- Added h-screen for full height -->
     <!-- Sidebar navigation -->
     <nav class="w-64 bg-gray-50 p-4 border-r">
       <ul class="flex flex-col gap-2">
@@ -28,22 +29,22 @@ export default {
   data() {
     return {
       routes: [
-        { path: '/', name: 'Home' },
-        { path: '/animatedBeam', name: 'animatedBeam' },
-        { path: '/animatedGradientText', name: 'animatedGradientText' },
-        { path: '/animatedList', name: 'animatedList' },
-        { path: '/animatedShinyText', name: 'animatedShinyText' },
-        { path: '/avatarCircle', name: 'avatarCircle' },
-        { path: '/bento', name: 'bento' },
-        { path: '/blurFade', name: 'blurFade' },
-        { path: '/blurIn', name: 'blurIn' },
-        { path: '/dotPattern', name: 'dotPattern' },
-        { path: '/globe', name: 'globe' },
-        { path: '/gradualSpacing', name: 'gradualSpacing' },
-        { path: '/letterUp', name: 'letterUp' },
-        { path: '/marquee', name: 'marquee' },
+        { path: "/", name: "Home" },
+        { path: "/animatedBeam", name: "animatedBeam" },
+        { path: "/animatedGradientText", name: "animatedGradientText" },
+        { path: "/animatedList", name: "animatedList" },
+        { path: "/animatedShinyText", name: "animatedShinyText" },
+        { path: "/avatarCircle", name: "avatarCircle" },
+        { path: "/bento", name: "bento" },
+        { path: "/blurFade", name: "blurFade" },
+        { path: "/blurIn", name: "blurIn" },
+        { path: "/dotPattern", name: "dotPattern" },
+        { path: "/globe", name: "globe" },
+        { path: "/gradualSpacing", name: "gradualSpacing" },
+        { path: "/letterUp", name: "letterUp" },
+        { path: "/marquee", name: "marquee" },
       ],
-    }
+    };
   },
-}
+};
 </script>
