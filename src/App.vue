@@ -1,11 +1,13 @@
 <template>
-  <div class="container mx-auto p-4">
-    <nav class="mb-8">
-      <ul class="flex flex-wrap gap-2">
+  <!-- Remove mx-auto to allow full-width, or keep it for centered layout -->
+  <div class="flex h-screen"> <!-- Added h-screen for full height -->
+    <!-- Sidebar navigation -->
+    <nav class="w-64 bg-gray-50 p-4 border-r">
+      <ul class="flex flex-col gap-2">
         <li v-for="route in routes" :key="route.path">
           <RouterLink
             :to="route.path"
-            class="mr-4 px-4 py-2 rounded transition-color hover:bg-gray-100"
+            class="block px-4 py-2 rounded transition-color hover:bg-gray-100"
             exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
           >
             {{ route.name }}
@@ -14,7 +16,10 @@
       </ul>
     </nav>
 
-    <RouterView></RouterView>
+    <!-- Main content -->
+    <main class="flex-1 p-4">
+      <RouterView></RouterView>
+    </main>
   </div>
 </template>
 
@@ -26,6 +31,7 @@ export default {
         { path: '/', name: 'Home' },
         { path: '/AnimatedBeamDemo', name: 'AnimatedBeamDemo' },
         { path: '/AnimatedGradientTextDemo', name: 'AnimatedGradientTextDemo' },
+        { path: '/AnimatedListDemo', name: 'AnimatedListDemo' },
       ],
     }
   },
