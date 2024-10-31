@@ -1,24 +1,37 @@
 <template>
-  <!-- Remove mx-auto to allow full-width, or keep it for centered layout -->
   <div class="flex h-screen">
-    <!-- Added h-screen for full height -->
-    <!-- Sidebar navigation -->
-    <nav class="w-64 bg-gray-50 p-4 border-r">
-      <ul class="flex flex-col gap-2">
-        <li v-for="route in routes" :key="route.path">
-          <RouterLink
-            :to="route.path"
-            class="block px-4 py-2 rounded transition-color hover:bg-gray-100"
-            exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
-          >
-            {{ route.name }}
-          </RouterLink>
-        </li>
-      </ul>
+    <!-- Sidebar navigation with fixed header and scrollable content -->
+    <nav class="w-64 bg-gray-50 border-r flex flex-col">
+      <!-- Fixed Header -->
+      <div class="p-4 border-b">
+        <h1 class="text-xl font-bold text-gray-800">My App</h1>
+      </div>
+
+      <!-- Scrollable Navigation -->
+      <div class="flex-1 overflow-y-auto p-4">
+        <ul class="flex flex-col gap-2">
+          <li v-for="route in routes" :key="route.path">
+            <RouterLink
+              :to="route.path"
+              class="block px-4 py-2 rounded transition-colors text-gray-700 hover:bg-gray-100"
+              exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
+            >
+              {{ route.name }}
+            </RouterLink>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Optional: Fixed Footer/Profile Section -->
+      <!-- <div class="p-4 border-t">
+        <div class="flex items-center px-4 py-2">
+          <span class="text-sm text-gray-700">User Profile</span>
+        </div>
+      </div> -->
     </nav>
 
     <!-- Main content -->
-    <main class="flex-1">
+    <main class="flex-1 p-4 overflow-auto">
       <RouterView></RouterView>
     </main>
   </div>
