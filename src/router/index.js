@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import animatedBeam from '@/components/SparkUI/animatedBeam/Demo.vue'
 import animatedGradientText from '@/components/SparkUI/animatedGradientText/Demo.vue'
@@ -24,77 +24,77 @@ import skewedInfiniteScroll from '@/components/SparkUI/skewedInfiniteScroll/Demo
 import typingAnimation from '@/components/SparkUI/typingAnimation/Demo.vue'
 
 const routes = [
-  { path: '/spark-ui-examples/', name: 'Home', component: Home },
-  { path: '/spark-ui-examples/animatedBeam', name: 'animatedBeam', component: animatedBeam },
+  { path: '/', name: 'Home', component: Home },
+  { path: '/animatedBeam', name: 'animatedBeam', component: animatedBeam },
   {
-    path: '/spark-ui-examples/animatedGradientText',
+    path: '/animatedGradientText',
     name: 'animatedGradientText',
     component: animatedGradientText,
   },
-  { path: '/spark-ui-examples/animatedList', name: 'animatedList', component: animatedList },
+  { path: '/animatedList', name: 'animatedList', component: animatedList },
   {
-    path: '/spark-ui-examples/animatedShinyText',
+    path: '/animatedShinyText',
     name: 'animatedShinyText',
     component: animatedShinyText,
   },
-  { path: '/spark-ui-examples/avatarCircle', name: 'avatarCircle', component: avatarCircle },
-  { path: '/spark-ui-examples/bento', name: 'bento', component: bento },
-  { path: '/spark-ui-examples/blurFade', name: 'blurFade', component: blurFade },
-  { path: '/spark-ui-examples/blurIn', name: 'blurIn', component: blurIn },
-  { path: '/spark-ui-examples/dotPattern', name: 'dotPattern', component: dotPattern },
-  { path: '/spark-ui-examples/globe', name: 'globe', component: globe },
+  { path: '/avatarCircle', name: 'avatarCircle', component: avatarCircle },
+  { path: '/bento', name: 'bento', component: bento },
+  { path: '/blurFade', name: 'blurFade', component: blurFade },
+  { path: '/blurIn', name: 'blurIn', component: blurIn },
+  { path: '/dotPattern', name: 'dotPattern', component: dotPattern },
+  { path: '/globe', name: 'globe', component: globe },
   {
-    path: '/spark-ui-examples/gradualSpacing',
+    path: '/gradualSpacing',
     name: 'gradualSpacing',
     component: gradualSpacing,
   },
-  { path: '/spark-ui-examples/letterUp', name: 'letterUp', component: letterUp },
-  { path: '/spark-ui-examples/marquee', name: 'marquee', component: marquee },
-  { path: '/spark-ui-examples/marquee3D', name: 'marquee3D', component: marquee3D },
+  { path: '/letterUp', name: 'letterUp', component: letterUp },
+  { path: '/marquee', name: 'marquee', component: marquee },
+  { path: '/marquee3D', name: 'marquee3D', component: marquee3D },
   {
-    path: '/spark-ui-examples/marqueeVertical',
+    path: '/marqueeVertical',
     name: 'marqueeVertical',
     component: marqueeVertical,
   },
   {
-    path: '/spark-ui-examples/meteors',
+    path: '/meteors',
     name: 'meteors',
     component: meteors,
   },
   {
-    path: '/spark-ui-examples/orbitingCircles',
+    path: '/orbitingCircles',
     name: 'orbitingCircles',
     component: orbitingCircles,
   },
   {
-    path: '/spark-ui-examples/particles',
+    path: '/particles',
     name: 'particles',
     component: particles,
   },
   {
-    path: '/spark-ui-examples/retroGrid',
+    path: '/retroGrid',
     name: 'retroGrid',
     component: retroGrid,
   },
   {
-    path: '/spark-ui-examples/ripple',
+    path: '/ripple',
     name: 'ripple',
     component: ripple,
   },
   {
-    path: '/spark-ui-examples/skewedInfiniteScroll',
+    path: '/skewedInfiniteScroll',
     name: 'skewedInfiniteScroll',
     component: skewedInfiniteScroll,
   },
   {
-    path: '/spark-ui-examples/typingAnimation',
+    path: '/typingAnimation',
     name: 'typingAnimation',
     component: typingAnimation,
   },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 
