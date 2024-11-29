@@ -3,7 +3,7 @@
     <!-- Sidebar navigation with fixed header and scrollable content -->
     <nav class="flex w-64 flex-col border-r bg-gray-50">
       <!-- Fixed Header -->
-      <RouterLink to="/spark-ui-examples">
+      <RouterLink to="/">
         <div class="border-b p-4">
           <h1 class="text-xl font-bold text-gray-800">Spark UI Examples</h1>
         </div>
