@@ -16,7 +16,7 @@
             <RouterLink
               :to="route.path"
               class="block rounded px-4 py-2 text-gray-700 transition-colors hover:bg-gray-100"
-              exact-active-class="bg-blue-500 text-white hover:bg-blue-600"
+              exact-active-class="bg-blue-500 text-white hover:bg-blue-600 hover:text-black"
             >
               {{ route.name }}
             </RouterLink>
