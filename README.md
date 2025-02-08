@@ -1,4 +1,4 @@
-# spark-ui-examples
+# example-spark-ui
 
 directly list examples of Spark UI 👉 <a href="https://geoochi.github.io/example-spark-ui" target="_blank">https://geoochi.github.io/example-spark-ui</a>
 
